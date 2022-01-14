@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Pattaya&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Righteous&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Righteous&family=Roboto+Condensed&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Goat Sports-login</title>
+</head>
+<body class="bg-dark">
+	<style>
+		
+  		body{
+        height:150%;
+font-family: 'Satisfy', sans-serif;
+
+  		background-color:#f7f7f7;
+  		}
+      .text-center{
+        color:White;
+        margin-left:-25px;
+        font-size:2.5em;
+        font-family:'Righteous', cursive;
+
+      }
+      .navbar{
+        position:sticky;
+        top:0em;
+        font-size:1.2em;
+        z-index:100;
+
+      }
+
+   
+h1{
+  font-size:2em;
+font-family: 'Righteous', cursive;
+
+}
+.nav-link{
+  color:white;
+}
+.nav-item:hover{
+color:orange;
+}
+.logo{
+	height:3.5em;
+	transform:translateY(-10%);
+}
+.card-texts{
+	color:white;
+  font-size: 1.15em;
+}
+.navbar-nav{
+  font-family: 'Righteous', cursive;
+  float:right;
+  
+}
+.card{
+   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+   transform: translate(20em,10em);
+   border-radius:20px;
+}
+.icon{
+padding:22px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+background-color:white;
+}
+input[type=text],input[type=password]{
+  width: 255px;
+  padding: 15px;
+  font-size: 15px;
+  background-color:#e3e3e3;
+  border:5px black;
+  line-height: 30px;
+	
+}
+.input-container {
+  display: flex;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.for1{
+  transform: translateX(10px);
+}
+.textwb{
+  position:relative;
+  font-family:'Righteous';
+  font-size:1.4em;
+  left:0.8em;
+}
+.textwb: hover{
+text-decoration: none;
+}
+
+
+
+
+@media only screen and (min-width: 800px) {
+.carousel .carousel-inner{
+  display:none;
+}
+.form1{
+  display:none;
+}
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+body{
+   height:150%;
+   font-family: 'Satisfy', sans-serif;
+   background-color:#f7f7f7;
+}
+     
+.navbar{
+  position:sticky;
+  top:0em;
+  z-index:100;
+}
+
+.nav-link{
+  color:red;
+}
+
+.nav-item:hover{
+color:orange;
+}
+
+.logo{
+  height:2.5em;
+  transform:translateY(-10%);
+}
+
+.navbar-nav{
+  font-family: 'Righteous', cursive;
+  position:sticky;
+  z-index:100;
+  float:left;
+}
+
+.ab{
+ display:none;
+}
+.for1{
+  display:none;
+}
+#abc{
+  display:none;
+}
+.carousel-inner > .item > img {
+  width:640px;
+  height:22em;
+}
+ .carousel .carousel-inner{
+  transform: translateY(-12.3em);
+ }
+ .carousel .carousel-inner, {
+   
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-top: -1px;
+    margin-bottom: 200px;
+    padding-top: 80px;
+}
+.carousel,.carousel-inner:after {
+    background: inherit;
+    bottom: -140px;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    
+  /*  transform: skewY(-4deg);*/
+    transform-origin: 100%;
+    z-index: -1;
+  }
+  .form1{
+    float: right;
+    position: absolute;
+    top:19em;
+   left:3.8em;
+   align-items:center;
+
+
+  }
+.icon{
+  color:darkcyan;
+  background-color:black;
+}
+#un,#pw{
+  background-color:##f7f7f7;
+ 
+}
+.input-container{
+  transform:translateY(0);
+   font-family:'Righteous';
+}
+#su{
+ font-family: 'Righteous';
+}
+.ahre{
+  font-size:1.5em;
+}
+::placeholder{
+    font-family:'Righteous';
+}
+}
+
+
+</style>
+
+<nav class="navbar navbar-expand-md navbar-expand-sm navbar-expand-lg navbar-expand-xl navbar-dark col-12" style="background-color:black">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <img class="logo" src="webimg/golo.png">
+    <h1 style="color:white">G.O.A.T Sports</h1>
+<div class="collapse navbar-collapse " id="collapsibleNavbar" >
+      
+<ul class="navbar-nav ml-auto">
+   <!--<li class="logo">G.O.A.T SPORTS</li>-->
+   
+        <li class="nav-item">
+          <a class="nav-link text-info" href="index.html" ><b>HOME</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " href="login.html" style="color:orange" ><b>SIGN-IN</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-info" href="#" ><b>ABOUT US</b></a>
+        </li>    
+        <li class="nav-item">
+          <a class="nav-link  text-info" href="#" ><b>ABOUT THE CREATER</b></a>
+        </li>
+      </ul>
+    </div>  
+  </nav>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-12">
+        <img src="webimg/subg.png" height="122%" width="130%" class="ab">
+      </div>
+      <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-12">
+        <div class="card card-body bg-dark" id="abc">
+          <div class="for1">
+          <form method="post" action="log.php" enctype="multipart/form-data">
+            <div class="text-center">Login</div>
+            <div class="input-container">
+           <i class="fa fa-user icon"></i><br>
+          <input type="text" name="un" id="un" placeholder="Username"><br></div>
+          <div class="input-container">
+          <i class="fa fa-key icon"></i>
+          <input type="password" name="pswd" placeholder="Password"></div>
+          <input type="submit" name="sb" value="login" style="width:15em;padding:7px;transform: translateX(22%);border-radius:20px;">
+        <div class="textwb" id="su"><a href="signup.html" class="ahre">Create your new account here.</a></div>
+        </div>
+        </form>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container">
+  <div class="row" id="r1">
+    <div class="col-12">
+      <div class="hero"><h1></h1>
+ 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="webimg/wblm.jpg" alt="Los Angeles">
+      </div>
+
+      <div class="item">
+        <img src="webimg/wbb.jpg" alt="Chicago" class="sa">
+      </div>
+    
+      <div class="item" >
+        <img src="webimg/wbcr.jpg" alt="New york">
+      </div>
+      <div class="item" >
+        <img src="webimg/wbten.jpg" alt="New york">
+      </div>
+      <div class="item" >
+        <img src="webimg/wbsm.jpg" alt="New york">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div style="clear:both;"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12">
+      <div style="clear:both;"></div>
+    <div class="form1">
+          <form method="post" action="log.php" enctype="multipart/form-data">
+             <h1 class="text-center pt-2 text-info" id="lo">LOG-IN</h1>
+                <hr class="w-50 mx-auto">
+            <div class="input-container">
+           <i class="fa fa-user icon"></i><br>
+          <input type="text" name="un" id="un" placeholder="Username"><br></div>
+          <div class="input-container">
+          <i class="fa fa-key icon"></i>
+          <input type="password" name="pswd" placeholder="Password" id="pw"></div>
+          <input type="submit" name="sb" value="login" style="width:15em;padding:7px;transform: translateX(22%);border-radius:20px; font-family:'Righteous';">
+          <div class="text-dark" id="su"><a href="signup.html" class="ahre">Create your new account here.</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

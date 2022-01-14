@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Pattaya&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Righteous&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Nunito&family=Nunito+Sans&family=Righteous&family=Roboto+Condensed&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Goat Sports-signup</title>
+</head>
+<body class="bg-dark">
+<style>	
+	body{
+        height:150%;
+		font-family: 'Satisfy', sans-serif;
+  		background-color:#f7f7f7;
+  		}
+      .text-center{
+        color:White;
+        margin-left:-25px;
+        font-size:2.5em;
+        font-family:'Righteous', cursive;
+
+      }
+      .navbar{
+        position:sticky;
+        top:0em;
+        font-size:1.2em;
+        z-index:100;
+
+      }
+
+   
+h1{
+  font-size:2em;
+font-family: 'Righteous', cursive;
+
+}
+.nav-link{
+  color:white;
+
+}
+.nav-item:hover{
+color:orange;
+}
+.logo{
+	height:3.5em;
+	transform:translateY(-10%);
+}
+.card-texts{
+	color:white;
+  font-size: 1.15em;
+}
+.navbar-nav{
+  font-family: 'Righteous', cursive;
+  float:right;
+ }
+
+.card{
+     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+  
+   border-radius:20px;
+}
+.icon {
+  padding: 18px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  background:#EA5F50;
+  color: cyan;
+  min-width: 50px;
+  text-align: center;
+  border-right: none;
+}
+
+.input-container {
+   
+
+  display: flex;
+ 
+  margin-bottom: 20px;
+}
+.input-field {
+  
+  width: 250px;
+  padding: 15px;
+  font-size: 15px;
+  background-color:#e3e3e3;
+  border:5px black;
+  line-height: 30px;
+}
+.input-field:focus {
+  border: none;
+  background-color:#cfcfcf;
+  
+}
+
+
+#sb,#rs{
+  border-radius: 8px;
+  width: 150px;
+  background-color:#EA5F50;
+  color:cyan;
+  font-size: 15px;
+  height:38px;
+  
+}
+::placeholder{
+   color:black;
+    
+   font-family:'Righteous';
+}
+
+
+
+#photo{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+}
+
+#file{
+   display: none;
+}
+
+#uploadBtn{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+.profile-pic-div{
+   height:180px;
+    width:180px;
+       border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid grey;
+  position: absolute;
+  top:-14.5em;
+  left:4.5em;
+}
+.csq{
+   
+  font-size: 20px;
+ /* background-color:#EA5F50;*/
+  color:white;
+  position:absolute;
+ 
+  bottom:8.9em;
+  font-family:Righteous;
+ 
+
+}
+option,select{
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color:#EA5F50;
+  color: cyan;
+  padding:15px;
+   font-family: 'Righteous';
+  text-align: center;
+  font-size: 16px;
+  width:300px;
+}
+option,select::selection{
+   border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+
+.title{
+  font-family: Copperplate Gothic;
+  color:white;
+  left:1.8em;
+  position: absolute;
+  font-size: 50px;
+
+}
+
+.card{
+height:145%;
+width:28em;
+transform: translateX(15em);
+}
+form{
+transform: translate(2em,20em);
+}
+
+@media only screen and (min-width: 800px) {
+.carousel .carousel-inner{
+  display:none;
+}
+
+.mob{
+  display:none;
+}
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+body{
+   height:200%;
+   font-family: 'Satisfy', sans-serif;
+   background-color:#f7f7f7;
+}
+.text-center{
+  position: absolute;
+  left:1em;
+ 
+  top:8.8em;
+  right:0.5em;
+}
+.pc{
+  display:none;
+}
+hr{
+  position: absolute;
+  top:24.5em;
+  right:1em;
+  left: 0.3em;
+}   
+.navbar{
+  position:sticky;
+  top:0em;
+  z-index:100;
+}
+
+.nav-link{
+  color:red;
+}
+
+.nav-item:hover{
+color:orange;
+}
+
+.logo{
+  height:2.5em;
+  transform:translateY(-10%);
+}
+
+.navbar-nav{
+  font-family: 'Righteous', cursive;
+  position:sticky;
+  z-index:100;
+  float:left;
+}
+
+.ab{
+ display:none;
+}
+.for1{
+  display:none;
+}
+#abc{
+  display:none;
+}
+.carousel-inner > .item > img {
+  width:640px;
+  height:22em;
+}
+ .carousel .carousel-inner{
+  transform: translateY(-12.3em);
+ }
+ .carousel .carousel-inner, {
+   
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-top: -1px;
+    margin-bottom: 200px;
+    padding-top: 80px;
+}
+.carousel,.carousel-inner:after {
+    background: inherit;
+    bottom: -140px;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    
+  /*  transform: skewY(-4deg);*/
+    transform-origin: 100%;
+    z-index: -1;
+  }
+    .form1 {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 21em;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1;
+    border-radius: 10px;
+}
+.icon{
+  color:darkcyan;
+  background-color:black;
+}
+#un,#pw{
+  background-color:##f7f7f7;
+ 
+}
+.input-container{
+  transform:translateY(0);
+   font-family:'Righteous';
+
+}
+#su{
+ font-family: 'Righteous';
+}
+.ahre{
+  font-size:2em;
+
+}
+
+
+#photo{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+}
+
+input[type=file]{
+  position: absolute;
+  
+  padding:50% ;
+}
+
+#uploadBtn{
+    height:70%;
+    width: 70%;
+    position: absolute;
+    bottom: 0.3em;
+    left: 0;
+ 
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+.profile-pic-div{
+   height:180px;
+    width:180px;
+       border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid grey;
+  position: absolute;
+  top:-14.5em;
+
+  left:4.5em;
+}
+option,select{
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color:black;
+  color: cyan;
+
+  padding:15px;
+  text-align: center;
+  font-size: 16px;
+  width:300px;
+}
+#sb,#rs{
+  border-radius: 8px;
+  width: 150px;
+  background-color:white;
+  color:black;
+  font-family:'righteous';
+  border-radius:20px;
+  
+  font-size: 15px;
+  height:38px;
+  
+}
+.csq{
+   
+  font-size: 20px;
+ /* background-color:#EA5F50;*/
+  color:white;
+  position:absolute;
+ 
+  bottom:10.6em;
+  font-family:Righteous;
+ 
+}
+  .form1 {
+    content: '';
+    height: 100%;
+    
+   display:block;
+  align-items: center;
+  justify-content: center
+    top: 21em;
+    width:100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1;
+    border-radius: 10px;
+   
+}
+}
+
+</style>
+<nav class="navbar navbar-expand-md navbar-expand-sm navbar-expand-lg navbar-expand-xl navbar-dark col-12" style="background-color:black">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <img class="logo" src="webimg/golo.png">
+    <h1 style="color:white">G.O.A.T Sports</h1>
+<div class="collapse navbar-collapse " id="collapsibleNavbar" >
+      
+<ul class="navbar-nav ml-auto">
+   <!--<li class="logo">G.O.A.T SPORTS</li>-->
+   
+        <li class="nav-item">
+          <a class="nav-link text-info" href="index.html" ><b>HOME</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-info" href="login.html" ><b>SIGN-IN</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:orange"><b>SIGN-UP</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-info" href="#" ><b>ABOUT US</b></a>
+        </li>    
+        <li class="nav-item">
+          <a class="nav-link  text-info" href="#" ><b>ABOUT THE CREATER</b></a>
+        </li>
+      </ul>
+    </div>  
+  </nav>
+
+  <div class="pc">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-5 col-xl-5 col-lg-5 col-6">
+                <img class="ab" src="webimg/subg.png"  height="115%" width="110%">
+      </div>
+      <div class="col-md-5 col-sm-5 col-xl-5 col-lg-5 col-6">
+      
+        <div class="card card-body bg-dark">
+           <div class="title"><b>Sign-up</b></div>
+           <div class="form1">
+          <form method="post" action="su.php" enctype="multipart/form-data">
+  <div class="profile-pic-div">
+  <img src="webimg/image.jpg" id="photo">
+  <input type="file" name="fu" id="fu" style="visibility: hidden;">
+  <label for="fu" id="uploadBtn">Choose Photo</label>
+</div><script src="app.js"></script>
+
+
+
+  <div class="input-container">
+   <i class="fa fa-user icon"></i>
+   <input type="text" name="un" placeholder="Username" id="un" class="input-field" required=""><br></div>
+   
+    <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input type="email" name="em" placeholder="Enter your email" id="em" class="input-field" required=""><br></div>
+    
+    <div class="input-container">
+    <i class="fa fa-calendar-o icon" style="font-size:20px"></i>
+    <input type="date" name="dob" placeholder="DOB" id="dob" class="input-field"><br></div>
+    
+    <div class="input-container">
+    <i class="fa fa-phone icon" style="font-size:22px"></i>
+    <input type="tel" name="pn" placeholder="Enter your 10 digit mobile number" id="pn" pattern="[0-9]{10}" class="input-field" required="" title="The number should be of 10 digits"><br></div>
+    
+    <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input type="password" name="pswd" placeholder="Enter Password" id="pswd" class="input-field" required=""></div>
+
+<div class="csq"><label for="sq"><b>Choose a Security Question</b></label></div><br>
+  <select name="sq" id="sqi">
+    <option>What is fav food of your pet</option>
+    <option>Nearest shop in locality</option>
+    <option>childhoodfriend of your life</option>
+    <option>In what age did you got your first salary</option>
+    <option>fav series</option>
+    <option>Your idol</option>
+  </select>
+
+ <div class="input-container">
+<i class="fa fa-question icon" style="font-size:26px"></i>
+<input type="text" name="txtfo" class="input-field" required="" placeholder="Enter ans of Security Question"><br></div>
+
+    <input type="submit" name="sb" id="sb">
+    <input type="reset" name="rs" id="rs">
+
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+<!--mobile-->
+<div class="mob">
+<div class="container h-100">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-12 col-sm-12 col-md-12">
+    <h1></h1>
+ 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="webimg/wblm.jpg" alt="Los Angeles">
+      </div>
+
+      <div class="item">
+        <img src="webimg/wbb.jpg" alt="Chicago" class="sa">
+      </div>
+    
+      <div class="item" >
+        <img src="webimg/wbcr.jpg" alt="New york">
+      </div>
+      <div class="item" >
+        <img src="webimg/wbten.jpg" alt="New york">
+      </div>
+      <div class="item" >
+        <img src="webimg/wbsm.jpg" alt="New york">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="mob">
+<div class="container h-100">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-10 col-sm-10 col-md-10 ">
+
+      <h1 class="text-center pt-1 text-info" id="lo">SIGN-UP</h1>
+                <hr class="w-50 mx-auto">
+        <form method="post" action="su.php" enctype="multipart/form-data" class="col-10 row justify-content-center" style="position: absolute;top:22em;">
+
+ 
+<div class="profile-pic-div">
+  <img src="webimg/image.jpg" id="photo" >
+    <label for="fu" id="uploadBtn" style="height:20em">Choose Photo</label>
+ <input type="file" name="fu" id="fu" style="width:15em;opacity:0;">
+
+<script src="app.js"></script></div>
+
+  <div class="input-container">
+   <i class="fa fa-user icon"></i>
+   <input type="text" name="un" placeholder="Username" id="un" class="input-field" required=""><br></div>
+   
+    <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input type="email" name="em" placeholder="Enter your email" id="em" class="input-field" required=""><br></div>
+    
+    <div class="input-container">
+    <i class="fa fa-calendar-o icon" style="font-size:20px"></i>
+    <b><input type="date" name="dob" placeholder="DOB" id="dob" class="input-field"  style="font-family:'Righteous';"><br></b></div>
+    
+    <div class="input-container">
+    <i class="fa fa-phone icon" style="font-size:22px"></i>
+    <input type="tel" name="pn" placeholder="Enter your 10 digit mobile number" id="pn" pattern="[0-9]{10}" class="input-field" required="" title="The number should be of 10 digits"><br></div>
+    
+    <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input type="password" name="pswd" placeholder="Enter Password" id="pswd" class="input-field" required=""></div>
+
+<div class="csq"><label for="sqi"><b>Choose a Security Question</b></label></div><br>
+  <select name="sq" id="sqi">
+    <option>What is fav food of your pet</option>
+    <option>Nearest shop in locality</option>
+    <option>childhoodfriend of your life</option>
+    <option>In what age did you got your first salary</option>
+    <option>fav series</option>
+    <option>Your idol</option>
+  </select>
+
+ <div class="input-container">
+<i class="fa fa-question icon" style="font-size:26px"></i>
+<input type="text" name="txtfo" class="input-field" required="" placeholder="Enter ans of Security Question"><br></div>
+
+    <input type="submit" name="sb" id="sb" style="width:16em;transform:translateX(5px);" >
+    <div class="text-dark" id="su"><a href="login.html" class="ahre">Login Instead?</a></div>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
